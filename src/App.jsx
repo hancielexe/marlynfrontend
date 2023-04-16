@@ -7,10 +7,12 @@ import {
 
 import './css/style.css';
 
-import './charts/ChartjsConfig';
-
 // Import pages
 import Dashboard from './pages/Dashboard';
+import Listings from './pages/Listings';
+import Unit from './pages/Unit';
+import Header from './components/Header';
+import UserDashboard from './pages/UserDashboard';
 
 function App() {
 
@@ -26,6 +28,9 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Dashboard />} />
+        <Route exact path="/listings" element={<Listings />} />
+        <Route exact path="/unit" element={<Unit />} />
+        <Route exact path="/user" element={<UserDashboard />} />
       </Routes>
     </>
   );
